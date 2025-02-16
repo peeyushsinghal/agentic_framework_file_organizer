@@ -3,7 +3,7 @@
 A Python-based file management system with an AI agent that automatically organizes and compresses files based on their types.
 
 
-![image](https://github.com/user-attachments/assets/0b9b509b-5a18-4f8f-9911-0698a4c5ab1e)
+![image](https://github.com/user-attachments/assets/33d2e3a6-2b8f-4df7-a3a0-dc0da0460456)
 
 
 ## Features
