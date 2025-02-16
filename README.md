@@ -75,7 +75,6 @@ docker run -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env file-manager
 │ ├── prompts.py # AI system prompts
 │ ├── file_manager_config.yml # File manager configuration
 │ └── agentic_config.yml # AI agent configuration
-├── tests/
 │ └── test_file_manager.py # Unit tests
 └── README.md
 ```
