@@ -1,0 +1,15 @@
+llm:
+  model: gemini-2.0-flash
+  endpoint: https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}
+  temperature: 0.1
+  max_output_tokens: 10000
+
+
+functions_file_path: "src/file_manager.py"
+functions_file_config_path: "src/file_manager_config.yml"
+
+input_folder_path: "data/input_folder"
+output_folder_path: "data/output_folder"
+
+
+

@@ -1,0 +1,13 @@
+compression_method:
+- PDF: "convertapi"
+- JPG: "tinypng"
+- PNG: "tinypng"
+
+file_types:
+- PDF
+- JPG
+- PNG
+
+
+tinypng_url: "https://api.tinify.com/shrink"
+convertapi_url: "https://v2.convertapi.com/convert/pdf/to/compress"
