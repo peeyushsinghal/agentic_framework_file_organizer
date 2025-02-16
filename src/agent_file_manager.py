@@ -6,9 +6,10 @@ from google.genai import types
 
 from prompts import *
 
-# from file_manager import *
 import inspect
 
+from dotenv import load_dotenv
+load_dotenv()
 
 class AgentFileManager:
     def __init__(
