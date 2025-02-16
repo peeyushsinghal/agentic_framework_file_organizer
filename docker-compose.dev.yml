@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  file-manager:
+    build: .
+    volumes:
+      # Mount the source code for development
+      - ./src:/app/src
+      - ./data/input_folder:/app/data/input_folder
+      - ./data/output_folder:/app/data/output_folder
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+    # Override command to use python debugger
+    command: ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "src/agent_file_manager.py"]
+    ports:
+      - "5678:5678"
+    # Keep the container running
+    tty: true 

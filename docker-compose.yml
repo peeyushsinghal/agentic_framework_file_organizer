@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  file-manager:
+    build: .
+    volumes:
+      # Mount the data directories
+      - ./data/input_folder:/app/data/input_folder
+      - ./data/output_folder:/app/data/output_folder
+      # Mount the .env file
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+    # Keep the container running
+    tty: true 
